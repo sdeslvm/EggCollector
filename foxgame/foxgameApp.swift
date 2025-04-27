@@ -1,17 +1,23 @@
-//
-//  foxgameApp.swift
-//  foxgame
-//
-//  Created by Pavel Ivanov on 02.04.2025.
-//
-
 import SwiftUI
 
 @main
 struct foxgameApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+        }
+    }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+
+        print(OrientationManager.shared.isHorizontalLock)
+        if OrientationManager.shared.isHorizontalLock {
+            return .landscape
+        } else {
+            return .allButUpsideDown
         }
     }
 }

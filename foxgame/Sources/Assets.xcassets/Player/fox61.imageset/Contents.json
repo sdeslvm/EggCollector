@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "fox61.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

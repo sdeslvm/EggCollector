@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "moveFrame.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
